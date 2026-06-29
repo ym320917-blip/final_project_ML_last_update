@@ -374,6 +374,7 @@ with tab1:
 # TAB 2 — BUSINESS ANALYSIS & PLOTS
 # ══════════════════════════════════════════════════════════════════════════════
 with tab2:
+    df=pd.read_csv('cleaned brazilian dataset')
     if df is None:
         st.info("📂 **To display live plots**, place your dataset CSV next to `app5.py` (name it `olist_analytical_dataset.csv`, `df.csv`, or `data.csv`) and restart the app.")
         st.markdown("The plots below will render automatically once the data file is detected.")
